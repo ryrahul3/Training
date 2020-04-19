@@ -1,0 +1,34 @@
+--> Component life cycle
+
+->OnChanges:-call every time when any updtae in a model
+ OnChanges (interface)
+ method :- ngOnchanges(){}
+ it will return current value and new value both.
+
+ -> OnInit:- call only one time when Component is loaded.
+    OnInit :- (interface)
+     method :- ngOnInit(){}
+
+ -> DoCheck:- ngDocheck(){}
+
+ -> AfterViewInit :- interface
+  method : ngAfterViewInit(){}
+
+-> AfterContetInit :- interface    
+method : ngAfterContetInit(){}
+
+-> ngOnDestroy(){}
+
+
+-> Directive : change the behaviour of DOM 
+-> Attribute:- change styles, apply events etc.
+   ElementRef :- service
+   HostListener:- decorator (to bind the proprerty )
+   Command:- ng g d directivename
+
+-> Structure Directive :- for dom manupulation
+use with * sign (*ngIf,ngFor)
+Command:- ng g d directivename
+TemplateRef :- service
+ViewContainerRef:- service
+Input:- decorator to pass data from one Component to another

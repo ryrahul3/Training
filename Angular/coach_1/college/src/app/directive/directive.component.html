@@ -1,0 +1,10 @@
+<div>
+<input type="radio" name="radio1" (click)="changeValue(true)"> Male 
+<input type="radio" name="radio1" (click)="changeValue(false)"> Female 
+</div>
+<div *ngIf="IsValid">
+  Data is valid.
+</div>
+<div *ngIf="!IsValid">
+  Data is not valid.
+</div>

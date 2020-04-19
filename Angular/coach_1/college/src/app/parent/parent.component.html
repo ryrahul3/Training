@@ -1,0 +1,6 @@
+<h1>Yeah Baap hai!</h1>
+<input type="text" placeholder="Name" #pk>
+<br/>
+<br/>
+<button (click)="send()">Submit</button>
+<app-parent-child  [childVal]="pk.value"></app-parent-child>

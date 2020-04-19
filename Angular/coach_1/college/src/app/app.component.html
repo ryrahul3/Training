@@ -1,0 +1,46 @@
+
+    <!-- <h2>Here are some links to help you start: </h2>
+    <app-student>   </app-student>
+    <app-pipe></app-pipe>
+
+    <app-child> </app-child>
+    <app-parent></app-parent> -->
+<!-- <app-child2child></app-child2child>
+<app-ng-for></app-ng-for>
+<app-directive></app-directive> -->
+<!-- <mat-sidenav-container class="example-container">
+    <mat-sidenav #drawer [mode]="mode.value">I'm a drawer</mat-sidenav>
+    <mat-sidenav-content>
+      <mat-form-field>
+        <mat-label>Sidenav mode</mat-label>
+        <mat-select #mode value="side">
+          <mat-option value="side">Side</mat-option>
+          <mat-option value="over">Over</mat-option>
+          <mat-option value="push">Push</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Has backdrop</mat-label>
+        <mat-select #hasBackdrop>
+          <mat-option>Unset</mat-option>
+          <mat-option [value]="true">True</mat-option>
+          <mat-option [value]="false">False</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <button mat-raised-button (click)="drawer.toggle()">Toggle drawer</button>
+    </mat-sidenav-content>
+  </mat-sidenav-container> -->
+  <div class="as">
+    <div class="title" > {{Name}}</div>
+    <div class="how-improve" [hidden]="hidden" [hidden]="improve">How can we improve it?</div>
+    <div class="button-group" [hidden]="button">
+      <button (click)="hide()" class="as-button" data-value="5" type="button">Yes</button>
+      <button (click)="show()" class="as-button" data-value="1" type="button">No</button>
+    </div>
+    <form data-stats-ve="20" [hidden]="hidden" [hidden]="improve" >
+      <div class="field">
+      <textarea aria-label="How can we improve it?" name="article_feedback_comment"></textarea>
+    </div>
+    <button (click)="hide()"class="submit-button" type="button">Submit</button>
+  </form>
+</div>

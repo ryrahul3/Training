@@ -1,0 +1,11 @@
+<h1>Latest News</h1>
+<div *ifStr="newsData">
+  <div *ngFor="let n of newsData|limitto:2">
+    <h2>{{n.title|uppercase}}</h2>
+    <p><img [src]="n.urlToImage"/></p>
+    <p>
+      {{n.description|substr:50}}
+    </p>
+    <hr/>
+  </div>
+</div>

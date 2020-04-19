@@ -1,0 +1,23 @@
+<h1 appAttr>Reactive Driven Validations</h1>
+<form [formGroup]="frm">
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" class="form-control" formControlName="name"/>
+    <!-- errors display-->
+      
+  </div>
+  <div class="form-group">
+    <label>Mobile</label>
+    <input type="text" class="form-control" formControlName="mobile"/>
+  </div>
+  <div class="form-group">
+    <label>Age</label>
+    <input type="text" class="form-control" formControlName="age"/>
+    <div *ngIf="frm.controls.age.invalid && frm.controls.age.dirty" class="alert alert-danger">
+      <div *ngIf="frm.controls.age.errors.ageRange">
+        Age is between 18 to 45
+      </div>
+    </div>
+  </div>
+  <input type="submit" value="Submit" class="btn btn-success" [disabled]="frm.invalid">
+</form>

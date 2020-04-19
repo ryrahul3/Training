@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<nav>
+  <ul>
+    <li>
+      <a routerLink="/">Home</a>
+    </li>
+    <li>
+      <a routerLink="/about-us">About us</a>
+    </li>
+    <li *ngFor="let p of product">
+      <a routerLink="/product/{{p}}">{{p}}</a>
+    </li>
+  </ul>
+</nav>
+<section>
+  <router-outlet></router-outlet>
+</section>
