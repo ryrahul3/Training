@@ -1,0 +1,80 @@
+
+//Runtime Polymorphism
+
+using System;
+
+
+namespace _27082018
+{
+
+    class abc
+    {
+        public virtual void info()
+        {
+            Console.WriteLine("class abc");
+        }
+    }
+
+    class xyz : abc
+    {
+        public override void info()
+        {
+            Console.WriteLine("class xyz");
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            abc ob = new xyz();
+            ob.info();
+            Console.ReadKey();
+        }
+    }
+}
+
+
+
+
+////inheritance in c#
+
+
+// interface
+
+using System;
+
+
+namespace _27082018
+{
+
+
+    interface shape
+    {
+        void area();
+    }
+    interface buliding
+    {
+        void map();
+    }
+
+    class xyz : shape, buliding
+    {
+        public void area()
+        {
+            Console.WriteLine("snsks");
+        }
+        public void map()
+        {
+            Console.WriteLine("snadacsks");
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            xyz ob = new xyz();
+            ob.map();
+        }
+    }
+}
+

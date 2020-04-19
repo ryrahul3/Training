@@ -1,0 +1,158 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace _16082018
+{
+    class abc
+    {
+      public  int num;
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            abc ob = new abc();
+            ob.num = 10;
+            Console.WriteLine(ob.num);
+
+            Console.ReadKey();
+        }
+    }
+}
+
+
+
+
+//function
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace _16082018
+{
+    class abc
+    {
+      public  void info()
+        {
+            Console.WriteLine("adgjadj");
+            Console.WriteLine("haichiasa");
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            abc ob = new abc();
+            ob.info();
+        }
+    }
+}
+
+//call by value
+
+using System;
+
+
+namespace _16082018
+{
+    class abc
+    {
+      public  void info(int num)
+        {
+            Console.WriteLine("num is: "+num);
+           
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            abc ob = new abc();
+            ob.info(12);
+
+            Console.ReadKey();
+        }
+    }
+}
+
+
+//call by ref...
+
+using System;
+
+
+namespace _16082018
+{
+    class abc
+    {
+      public  void info(ref int num)
+        {
+            num = num + 30;
+           
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            abc ob = new abc();
+
+            int x;
+            x = 100;
+            ob.info(ref x);
+            Console.WriteLine("num is:"+x);
+
+            Console.ReadKey();
+        }
+    }
+}
+
+
+
+// call by function
+
+
+using System;
+
+
+namespace _16082018
+{
+    class abc
+    {
+      
+        
+            int x;
+            int y;
+
+
+            public void get()
+            {
+                x = 10;
+                y = 20;
+
+            }
+           public void show()
+            {
+                Console.WriteLine(x);
+            }
+        }
+    
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            abc ob = new abc();
+
+            ob.get();
+            ob.show();
+
+            Console.ReadKey();
+        }
+    }
+}
+		

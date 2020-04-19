@@ -1,0 +1,97 @@
+using System;
+using System.IO;
+namespace _20180903
+{
+    class abc
+    {
+        public int salary, age;
+        public string emp_name, emp_dept;
+
+        public string emp_company { get; set; }
+        public string branch { get; set; }
+
+        public abc() { }
+
+        public abc(int X) { }
+
+        public abc(int x, int y) { }
+
+        public void info() { }
+
+        public void info(int X, int y) { }
+        
+
+
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Type T = typeof(abc);
+
+
+            //FileStream fw = new FileStream(@"C:\Users\rahul.yadav\Desktop\Rahul\myData\system.txt", FileMode.Append, FileAccess.Write);
+
+            FileStream fw = new FileStream(@"C:\Users\rahul.yadav\Desktop\Rahul\myData\system.txt", FileMode.Open, FileAccess.Read);
+
+
+            // StreamWriter sw = new StreamWriter(fw);
+
+            StreamReader sw = new StreamReader(fw);
+
+
+
+            //sw.WriteLine("\n\n\n*******************for fields************************\n\n\n");
+            //FieldInfo[] fInfo = T.GetFields();
+            //foreach (FieldInfo a in fInfo) {
+
+            //    sw.WriteLine(a);
+            //}
+
+            //sw.WriteLine("\n\n\n*******************for properties************************\n\n\n");
+            //PropertyInfo[] pInfo = T.GetProperties();
+            //foreach (PropertyInfo a in pInfo)
+            //{
+
+            //    sw.WriteLine(a);
+            //}
+
+            //sw.WriteLine("\n\n\n*******************for constructors************************\n\n\n");
+            //ConstructorInfo[] cInfo = T.GetConstructors();
+            //foreach (ConstructorInfo a in cInfo)
+            //{
+
+            //    sw.WriteLine(a);
+            //}
+
+            //sw.WriteLine("\n\n\n*******************for methods************************\n\n\n");
+            //MethodInfo[] mInfo = T.GetMethods();
+            //foreach (MethodInfo a in mInfo)
+            //{
+
+            //    sw.WriteLine(a);
+            //}
+            // sw.Flush();
+
+
+            sw.BaseStream.Seek(0, SeekOrigin.Begin);
+
+            string str = sw.ReadLine();
+            while(str !=null)
+            {
+                Console.Write(str +"\n");
+                str = sw.ReadLine();
+            }
+
+
+
+
+
+            sw.Close();
+            fw.Close();
+
+          //  Console.WriteLine("File uploaded !");
+           Console.ReadKey();
+        }
+    }
+}

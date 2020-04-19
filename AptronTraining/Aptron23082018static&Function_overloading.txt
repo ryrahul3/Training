@@ -1,0 +1,120 @@
+ using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace _20180820
+{
+
+    //public double pie;
+    class circle
+    {
+        public double pie;
+        public circle(double x)
+        {
+            pie = x;
+        }
+
+        public double area(double r)
+        {
+            return (pie * r * r);
+        }
+
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            circle c1 = new circle(3.14);
+            double area1 = c1.area(2);
+            Console.WriteLine("Area of circle: " + area1);
+            Console.ReadKey();
+        }
+    }
+}
+
+
+//////////////
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace _20180820
+{
+
+    
+    class abc
+    {
+        static int num;
+         public abc()
+        {
+            num++;
+            Console.WriteLine("num is :  " +num);
+        }
+
+
+        
+
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        abc ob1 = new abc();
+            abc ob2 = new abc();
+
+            
+            Console.ReadKey();
+        }
+    }
+}
+	
+
+
+
+//// static classs  (Function overloading.................)
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace _20180820
+{
+
+    
+    class abc
+    {
+        public int num;
+         public static abc operator -(abc t1, abc t2)
+        {
+            abc temp = new abc();
+            temp.num = t1.num - t2.num;
+            return temp;
+           // Console.WriteLine("num is :  " +num);
+        }
+
+
+        
+
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            abc ob1 = new abc();
+            abc ob2 = new abc();
+            abc ob3 = new abc();
+
+            ob1.num = 200;
+            ob2.num = 140;
+            ob3 = ob1 - ob2;
+            Console.WriteLine(ob3.num);
+            
+            Console.ReadKey();
+        }
+    }
+}

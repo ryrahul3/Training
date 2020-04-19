@@ -1,0 +1,199 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace _20180820
+{
+    class Program
+    {
+
+         class abc
+
+        {
+            public void sum (int p1 , int p2)
+            {
+                int s;
+                s = p1 + p2;
+                Console.WriteLine("total 2" +s);
+            }
+
+            public void sum(int p1, int p2, int p3)
+            {
+                int s;
+                s = p1 + p2 +p3;
+                Console.WriteLine("total 2" + s);
+            }
+        }
+        static void Main(string[] args)
+        {
+            abc ob =
+
+
+        }
+    }
+}
+
+
+
+//// parameter construtor
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace _20180820
+{
+    class Program
+    {
+
+         class abc
+
+        {
+            public abc(int num)
+            {
+              Console.WriteLine("num"+ num);
+            }
+
+        }
+        static void Main(string[] args)
+        {
+            abc ob = new abc(12);
+
+
+        }
+    }
+}
+
+
+
+//default constructor
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace _20180820
+{
+    class Program
+    {
+
+         class abc
+
+        {
+            public abc
+            {
+              Console.WriteLine("num");
+            }
+
+        }
+        static void Main(string[] args)
+        {
+            abc ob = new abc();
+
+
+        }
+    }
+}
+
+
+//// copy construtor 
+
+
+using System;
+
+
+namespace _20180820
+{
+   
+
+        class abc
+
+        {
+            int num;
+            public abc(int x)
+            {
+                num = x;
+            }
+
+            public abc(abc t)
+            {
+
+                num = t.num;
+            }
+
+            public void info()
+            {
+                Console.WriteLine(num);
+            }
+
+             
+            }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        abc ob1 = new abc(20);
+        ob1.info();
+        abc ob2 = new abc(ob1);
+        ob2.info();
+
+        Console.ReadKey();
+
+
+        }
+    }
+}
+
+
+// area of circle program.................
+
+using System;
+
+
+namespace _20180820
+{
+   
+
+        class abc
+
+        {
+            int num;
+            public abc(int x)
+            {
+                num = 
+            }
+
+            public abc(abc t)
+            {
+
+                num = t.num;
+            }
+
+            public void info()
+            {
+                Console.WriteLine(num);
+            }
+
+             
+            }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        abc ob1 = new abc(20);
+        ob1.info();
+        abc ob2 = new abc(ob1);
+        ob2.info();
+
+        Console.ReadKey();
+
+
+        }
+    }
+}

@@ -1,0 +1,159 @@
+
+//Array.......
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace array
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] num = new int[3];
+
+           
+            for (int i = 0; i <3; i++)
+            {
+                Console.Write("Enter array :");
+                num[i] = Convert.ToInt16(Console.ReadLine());
+            }
+
+            Console.WriteLine("\n---------output---------\n");
+            Array.Sort(num);
+            Array.Reverse(num);
+            
+            foreach (int a in num)
+            {
+                
+                Console.WriteLine(a);
+                
+            }
+            Console.ReadKey();
+        }
+
+    }
+
+}
+
+
+
+//jagged Array.......
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace array
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[][] arr = new int[3][];
+            arr[0] = new int[2];
+            arr[1] = new int[2];
+            arr[2] = new int[2];
+
+
+            arr[0] = new int[] { 1, 2 };
+            arr[1] = new int[] { 1, 3 };
+            arr[2] = new int[] { 1, 2 };
+            //jadd
+            for (int i = 0; i < arr.Length; i++)
+
+            {
+                for (int j = 0; j < arr[i].Length; j++)
+                {
+                    Console.Write(arr[i][j] +"\t");
+                }
+                Console.WriteLine("\n");
+            }
+
+            Console.ReadKey();
+        }
+
+    }
+}
+
+
+
+
+
+// 2-D array.....
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace array
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[,] num = new int[3,3];
+
+           
+            for (int i = 0; i <3; i++)
+            {
+                for (int j = 0; j <3; j++)
+                {
+                    Console.Write("Enter matrix :");
+                    num[i,j] = Convert.ToInt16(Console.ReadLine());
+                }
+                
+            }
+
+            Console.WriteLine("\n---------output---------\n");
+
+
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    Console.Write(num[i, j]+"\t");
+                   
+                }
+                Console.WriteLine("\n");
+            }
+            Console.ReadKey();
+        }
+
+    }
+}
+
+
+
+//string........
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace array
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            String str;
+            Console.Write("Enter name : ");
+            str = Console.ReadLine();
+
+
+            int i = str.Length;
+            str = str.ToLower();
+            Console.Write("\n  Len : "+ i + " Name : " + str);
+            Console.ReadKey();
+        }
+
+    }
+}
